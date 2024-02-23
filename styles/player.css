@@ -1,0 +1,258 @@
+footer {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    /* border: 2px solid red; */
+    background-color: var(--color-2);
+    padding: 10px;
+
+    overflow: hidden;
+}
+
+footer .backgroundImage {
+    position: absolute;
+    transform: translate(-10px, -10px);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* webkit filters for this is in theme css */
+}
+
+.backgroundImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom-bar {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    max-width: 1400px;
+    min-width: 320px;
+    padding: 0;
+    margin: 0 auto;
+    transition: all 5s;
+}
+
+/* changing */
+.song-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0px 0px 0 320px;
+}
+
+.song-info img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.song-info .circular-loading {
+    position: absolute;
+    background-color: #11111153;
+    padding: 5px;
+}
+
+.song-info h3,
+.song-info h4 {
+    margin: 0;
+    width: calc(100% - 50px);
+    max-width: 700px;
+    min-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-info h4 {
+    cursor: pointer;
+}
+
+.grp {
+    width: calc(100% - 100px);
+}
+
+/* changing */
+.player-btn-grp {
+    display: inline-flex;
+    gap: 15px;
+    position: absolute;
+    top: 17px;
+    left: 210px;
+    margin: 2.5px 0px 0px 20px;
+}
+
+.queue {
+    height: 0px;
+    transition: height 500ms;
+}
+
+.queue.open {
+    margin: 20px 0px 0 0px;
+    height: 329px;
+    overflow: auto;
+}
+
+.queue h3 {
+    margin: 0;
+}
+
+.queue-list {
+	height: 300px;
+    
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.queue-list .nowPlaying {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 60px !important;
+    opacity: 0.6;
+}
+
+.lyrics {
+    height: 0px;
+    transition: height 500ms;
+}
+
+.lyrics.open {
+    height: 300px;
+    margin: 20px 0px 0 0;
+    overflow-y: auto;
+}
+
+.lyrics h4 {
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.rhap_container {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    background-color: transparent !important;
+}
+
+.rhap_time,
+.rhap_main-controls-button,
+.rhap_repeat-button,
+.rhap_volume-button {
+    color: var(--color-5) !important;
+}
+
+.rhap_progress-filled,
+.rhap_progress-indicator,
+.rhap_volume-bar,
+.rhap_volume-indicator {
+    background-color: var(--color-5) !important;
+}
+
+.rhap_download-progress {
+    background-color: var(--color-2) !important;
+}
+
+.rhap_progress-bar {
+    background-color: var(--color-1) !important;
+}
+
+.rhap_progress-section {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+/* chnaging */
+.rhap_progress-container {
+    position: absolute !important;
+    width: calc(100% - 20px) !important;
+
+    top: 0;
+    left: 0;
+    transform: translate(0, -89%);
+    margin: 0 !important;
+    z-index: 20;
+}
+
+.rhap_progress-indicator {
+    display: none !important;
+}
+
+.rhap_time {
+    position: absolute !important;
+    background-color: transparent;
+    left: 0px;
+    font-size: medium !important;
+}
+
+/* changing */
+.rhap_current-time {
+    top: 15px;
+}
+
+.rhap_total-time {
+    top: 35px;
+}
+
+/* changing */
+.rhap_controls-section {
+    position: absolute !important;
+    top: 5px;
+    left: 70px;
+
+    max-width: 400px;
+    min-width: 300px;
+    justify-content: left !important;
+    width: 40%;
+}
+
+.rhap_additional-controls {
+    flex: 0 !important;
+}
+
+.rhap_repeat-button {
+    margin: 0 !important;
+}
+
+.rhap_main-controls {
+    flex: 0 !important;
+    justify-content: left !important;
+}
+
+.rhap_volume-controls {
+    flex: 0 !important;
+    display: none !important;
+}
+
+.rhap_volume-container {
+    width: 100px !important;
+}
+
+@media screen and (max-width:700px) {
+    .song-info {
+        margin: 0px;
+    }
+
+    .player-btn-grp {
+        position: relative;
+        top: 4px;
+        left: 210px;
+        margin: 2.5px 0px 0px 20px;
+    }
+
+    .rhap_current-time {
+        top: 65px;
+    }
+    
+    .rhap_total-time {
+        top: 85px;
+    }
+    
+    .rhap_controls-section {
+        top: 52px;
+    }
+}

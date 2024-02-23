@@ -1,0 +1,13 @@
+:root {
+    /* light */
+    --color-6: #111111;
+    --color-5: #212121;
+    --color-4: #515151;
+    --color-3: #bdbdbd;
+    --color-2: #e0e0e0;
+    --color-1: #f0f0f0;
+}
+
+footer .backgroundImage {
+    -webkit-filter: blur(20px) brightness(140%) contrast(40%);
+}

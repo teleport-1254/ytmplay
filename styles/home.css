@@ -1,0 +1,58 @@
+.block-for-horizontal {
+	margin: 10px;
+	width: 100%;
+	min-width: 320px;
+	max-width: 1400px;
+
+	/* height: 400px; */
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.block-for-horizontal h2 {
+	margin: 10px 0;
+	width: 400px;
+}
+
+.home-feed-song {
+	height: 400px;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.horizontal-playlist {
+	display: flex;
+	gap: 20px;
+
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+/* other pages */
+
+.page-info {
+	padding: 0 10px;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page h4 {
+	margin: 0;
+}
+
+.page img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	margin: 5px 0;
+}

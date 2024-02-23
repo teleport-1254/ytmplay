@@ -1,0 +1,14 @@
+body {
+	background-color: var(--color-1);
+	margin: 0;
+	color: var(--color-6);
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+}
+
+.pages {
+	max-width: 1400px;
+	padding: 10px 10px;
+	margin: 0 auto;
+}
+

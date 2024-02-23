@@ -1,0 +1,133 @@
+.search form {
+    /* display: flex; */
+    /* justify-content: center; */
+    position: relative;
+    margin: 0;
+    width: calc(100% - 30px);
+    display: flex;
+}
+
+.search form input {
+    padding: 8px 10px;
+    margin: 0;
+    width: 100%;
+    color: var(--color-6);
+    font-size: 32px;
+    font-weight: 600;
+    /* text-align: center; */
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-1);
+    border: 0;
+}
+
+.search form input:focus {
+    outline: 0;
+}
+
+input::placeholder {
+    color: var(--color-4);
+}
+
+.suggestions ul {
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--color-2);
+    border-radius: 5px;
+    width: calc(100% - 200px);
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    margin: 0 10px;
+    padding: 5px;
+    color: var(--color-6);
+    background-color: var(--color-1);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.search ul li {
+    display: block;
+    color: var(--color-4);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    padding: 0 0 5px 0;
+
+    margin: 10px;
+
+    &::-webkit-scrollbar {
+        height: 0;
+    }
+}
+
+.tabs button {
+    color: var(--color-6);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    background-color: var(--color-1);
+    border: 0;
+    cursor: pointer;
+}
+
+.on {
+    color: var(--color-6) !important;
+}
+
+.off {
+    color: var(--color-3) !important;
+}
+
+/* .search-result {
+} */
+.result-block {
+    margin: 6px 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all 2s ease;
+}
+
+.result-block button {
+    padding: 0;
+    color: var(--color-6);
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--color-1);
+    border: 0;
+}
+
+.result-block button span {
+    vertical-align: text-top;
+    font-size: 26px !important;
+}
+
+.result-block.on {
+    transform: translateX(100%);
+}
+
+.result-block h3 {
+    margin: 8px 0 2px 0;
+}
+
+.result-content {
+    height: calc(100vh - 290px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:700px) {
+    .result-content {
+        height: calc(100vh - 330px);
+    }
+}
