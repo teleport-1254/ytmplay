@@ -39,7 +39,7 @@ YtmPlay is an online web music player built with Next.js and React, styled with 
 5. Open http://localhost:3000 in your browser to see the application.
 
 ## Deployment
-Application is deployed on Vercel for demo [here](https://github.com/teleport-1254/ytmplay)
+Application is deployed on Vercel for demo [here](https://ytmplay.vercel.app/)
 
 ## Screenshots
 <img src="./screenshots/search.png" alt="search page" height="450" width="800" />
