@@ -33,7 +33,7 @@ export const useSearchQueryStore = create<SearchQueryState>((set) => ({
 
 // page state
 export const usePageStore = create<PageState>((set) => ({
-    page: 'search',
+    page: 'home',
     prevPage: '',
     id: null,
     setPage: (page: string) => set(() => ({ page: page })),
